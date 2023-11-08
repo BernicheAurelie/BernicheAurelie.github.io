@@ -5,16 +5,19 @@ from email.mime.multipart import MIMEMultipart
 import cgi
 import cgitb
 import html
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 print('test envoi email')
 
 # mode debug (à supprimer si ok):
 cgitb.enable()
 
-expediteur = 'berniche.aurelie@orange.fr'
-password = 'A20081113b'
-destinataire = 'berniche.aurelie@orange.fr'
+expediteur = os.getenv('expediteur', 'default')
+password = os.getenv('password', 'default')
+destinataire = os.getenv('destinataire', 'default')
 
 form = cgi.FieldStorage()
 
