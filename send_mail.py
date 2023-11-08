@@ -10,7 +10,7 @@ import html
 print('test envoi email')
 
 # mode debug (à supprimer si ok):
-cgi.enable()
+cgitb.enable()
 
 expediteur = 'berniche.aurelie@orange.fr'
 password = 'A20081113b'
@@ -28,12 +28,29 @@ try:
     input_message = form.getvalue('message')
     message = html.escape(input_message)
     subject = [prenom, nom, email]
-    print("<script> alert('Merci, message bien envoyé. Je vous répond dans les plus brefs délais.')")
+    print("<script> alert('Merci, message bien envoyé. Je vous répond dans les plus brefs délais.')</script>")
 except:
-    print("<script> alert('Merci de renseigner tous les champs du formulaire.')")
+    print("<p> Merci de renseigner tous les champs du formulaire.</p>")
     print(Exception)
 
-
+print("Content-type: text/html; charset=utf-8\n")
+doc_html = """
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send mail</title>
+</head>
+<body>
+    <h1> Mail envoyé</h1>
+"""
+print(doc_html)
+print(f"<h2>Merci {prenom}</h2>")
+doc_html = """
+</body>
+</html>
+"""
+print
 
 msg = MIMEMultipart()
 msg['From'] = expediteur
