@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurélie André</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -62,12 +62,16 @@
                                 Dans le cadre de mon congé parental, je me suis investie dans une reconversion professionnelle pour &#34;surfer sur la vague&#34; 
                                 et devenir développeur d'application Python.</br>
                                 J'ai finalement réussi à gravir cette montagne et je viens de valider avec succès ma formation chez 
-                                <a href="https://openclassrooms.com/fr/paths/879-developpeur-dapplication-python" class="text-decoration-none"> OpenClassrooms</a>
+                                <a href="https://openclassrooms.com/fr/paths/879-developpeur-dapplication-python" class="fw-bold"> OpenClassrooms</a>
                                 &#129395;</br>
-                                Je n'ai pas encore d'expérience mais je suis curieuse et avide de savoirs, que ce soit pour acquérir de nouvelles compétences ou approfondir les miennes.
+                                Je n'ai pas encore d'expérience professionnelle mais vous pourrez voir <a href="#mon_portfolio" class="fw-bold"> un peu plus bas</a> quelques projets que j'ai réalisé.
+                                Je suis curieuse et avide de savoirs, que ce soit pour acquérir de nouvelles compétences ou approfondir les miennes.
                                 Je souhaite trouver un travail de développeur python / django au sein d'une société qui m'accompagnera et me permettra d'évoluer.                            
                             </p>
-                        <button class="btn btn-outline-secondary btn-sm mt-5"><a href="#mon_expertise">Mon expertise web</a></button>
+                        <button class="fw-bold btn btn-outline-secondary btn-sm mt-3">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#Competences">Mes compétences</a>
+                            <!-- <a href="#mon_expertise">Mon expertise web</a> -->
+                        </button>
                     </div>
                     <div class="col-12 col-md-6">
                         <img src="img/Moi.jpg" class="img-thumbnail w-100" alt="Mon profil">
@@ -89,7 +93,7 @@
                                 <!-- on définit la 1ere colonne pour chaque taille d'écran et la 2e prend le reste-->
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
-                                        <i class="fab fa-html5 fa-2x me-3 text-primary"></i>
+                                        <i class="fab fa-html5 fa-2x me-3 text-warning"></i>
                                         <p class="fw-bold m-0">HTML5</p>
                                     </div>
                                 </div>
@@ -102,7 +106,7 @@
                             <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
-                                        <i class="fab fa-css3-alt fa-2x me-3 text-primary"></i>
+                                        <i class="fab fa-css3-alt fa-2x me-3 text-warning"></i>
                                         <p class="fw-bold m-0">CSS</p>
                                     </div>
                                 </div>
@@ -115,7 +119,7 @@
                             <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
-                                        <i class="fab fa-js fa-2x me-3 text-primary"></i>
+                                        <i class="fab fa-js fa-2x me-3 text-warning"></i>
                                         <p class="fw-bold m-0">JS</p>
                                     </div>
                                 </div>
@@ -128,7 +132,7 @@
                             <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
-                                        <i class="fab fa-python fa-2x me-3 text-primary"></i>
+                                        <i class="fab fa-python fa-2x me-3 text-warning"></i>
                                         <p class="fw-bold m-0">Python</p>
                                     </div>
                                 </div>
@@ -142,7 +146,7 @@
                             <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
-                                        <svg class="" fill="#0d6efd" width="50px" height="50px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#0d6efd" stroke-width="0.024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"><path d="M7.533 12.249c-.011 1.985 1.445 3.168 3.768 2.63V9.618c-2.352-.716-3.758.733-3.768 2.631m3.839-10.238h3.199v15.143c-3.066.501-6.004.819-8.104-.355-2.705-1.513-2.923-6.319-.782-8.46 1.085-1.085 3.271-1.85 5.616-1.351V2.225c-.006-.101-.012-.202.071-.214m8.389 3.342h-3.199V2.011h3.199v3.342z"></path><path d="M19.761 7.044c-.003 2.356-.003 4.048-.003 6.911-.136 2.813-.104 5.052-1.135 6.398-.203.266-.634.652-.995.924-.303.228-.881.691-1.208.711-.331.021-1.18-.459-1.564-.64-.505-.237-.971-.553-1.493-.71 1.218-.754 2.372-1.32 2.844-2.844.41-1.326.355-3.247.355-5.119 0-1.849.009-3.998.009-5.63l3.19-.001z"></path></g></svg>                                        
+                                        <svg class="" fill="#581845" width="50px" height="50px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#581845" stroke-width="0.024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"><path d="M7.533 12.249c-.011 1.985 1.445 3.168 3.768 2.63V9.618c-2.352-.716-3.758.733-3.768 2.631m3.839-10.238h3.199v15.143c-3.066.501-6.004.819-8.104-.355-2.705-1.513-2.923-6.319-.782-8.46 1.085-1.085 3.271-1.85 5.616-1.351V2.225c-.006-.101-.012-.202.071-.214m8.389 3.342h-3.199V2.011h3.199v3.342z"></path><path d="M19.761 7.044c-.003 2.356-.003 4.048-.003 6.911-.136 2.813-.104 5.052-1.135 6.398-.203.266-.634.652-.995.924-.303.228-.881.691-1.208.711-.331.021-1.18-.459-1.564-.64-.505-.237-.971-.553-1.493-.71 1.218-.754 2.372-1.32 2.844-2.844.41-1.326.355-3.247.355-5.119 0-1.849.009-3.998.009-5.63l3.19-.001z"></path></g></svg>                                        
                                         <p class="fw-bold m-2">Django</p>
                                     </div>
                                 </div>
@@ -367,20 +371,126 @@
         </section> -->
         <!-- Modal -->
         <aside>
-            <div class="modal fade" id="MentionsLegales" tabindex="-1" aria-labelledby="MentionsLegalesLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="MentionsLegalesLabel">Mentions légales:</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal fade" id="Competences" tabindex="-1" aria-labelledby="CompetencesLabel">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content bg-primary">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="CompetencesLabel">Mes Compétences:</h5>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" data-bs-dismiss="modal">
+                            <p>
+                                <p>
+                                    Cette formation m'a permis l'apprentissage du langage Python et du framework Django au cours de divers projets:
+                                </p>
+                                <ol>
+                                    <li>
+                                        Utilisation des bases de python pour l'analyse de marché:
+                                        <ul>
+                                            <li>Scrapping de données (modules requests et bs4)</li>
+                                            <li>Écriture dans un fichier CSV</li>
+                                            <li>Téléchargement d'images</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Designer une application Python adaptée aux besoin du client:
+                                        <ul>
+                                            <li>Formation aux méthodes agiles</li>
+                                            <li>Rédaction de "user stories" et de "use case diagrams"</li>
+                                            <li>Création de wireframes fonctionnelles</li>
+                                            <li>D'un tableau kanban pour découper un projet</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Développer un programme logiciel en Python: application pour l'organisation d'un tournoi d'échec
+                                        <ul>
+                                            <li>Utilisation de la POO</li>
+                                            <li>Utilisation du pattern MVC</li>
+                                            <li>Conformité avec la pep8</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Développer une interface utilisateur pour une application web Python: réalisation d'un site web pour récupérer des données cinématographiques
+                                        <ul>
+                                            <li>Apprentissage des langages HTML5 et CSS3</li>
+                                            <li>Apprentissage de Javascript
+                                                <ul>
+                                                    <!-- <details>
+                                                        <summary> 
+                                                            apprentissage js
+                                                        </summary>
+                                                        <p>
+                                                            création d'un carousel, Requêtes AJAX vers une API Rest
+                                                        </p>
+                                                    </details> -->
+                                                    <li class="list_detail">Création d'un carousel</li>
+                                                    <li class="list_detail">Requêtes AJAX vers une API Rest</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Résoudre des problèmes à l'aide d'algorithmes Python: mise en place d'un script python dans le cadre d'un choix de placements en bourse.
+                                        <ul>
+                                            <li>Algorithme de force brute</li>
+                                            <li>Algorithme pour une solution optimisée en triant les données</li>
+                                            <li>Apprentissage de la notation Big (O), complexité spatiale et mémorielle </li>
+                                            <li>Comparaison des performances des algorithmes</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Développer une application web en utilisant Django: 
+                                        <ul>
+                                            <li>Mise en place d'une authentification</li>
+                                            <li>Création de post avec un fichier média associé</li>
+                                            <li>Possibilité de répondre aux posts</li>
+                                            <li>Abonnement à d'autres utilisateurs</li>
+                                            <li>page de flux ciblée utilisateurs et abonnés</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Créer une API sécurisée Restful avec Django Rest Framework: 
+                                        <ul>
+                                            <li>Authentification par token avec simple JWT</li>
+                                            <li>Mise en place de permissions spécifiques</li>
+                                            <li>Réalisation de tests unitaires</li>
+                                            <li>Publication de la documentation Postman</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Améliorer une application web Python par des tests et du débogage:
+                                        <ul>
+                                            <li>Mise en place de tests pour une application Flask</li>
+                                            <li>Correction de bugs, gestion des erreurs et implémentation de nouvelles fonctionnalités</li>
+                                            <li>Analyse de la performance avec locus</li>
+                                            <li>Vérification de la couverture de test avec coverage</li>
+                                            <li>Gestion de branches avec GitHub</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Développer une architecture back-end sécurisée en utilisant Django ORM: Développement d'un CRM sécurisé pour une agence d'événementiel.
+                                        <ul>
+                                            <li>Élaboration d'une base de données relationnelle PostgreSQL à l'aide d'un ERD</li>
+                                            <li>Définition de groupes d'utilisateurs et de permissions en fonction de leurs rôle</li>
+                                            <li>Personnalisation de la partie administration du site</li>
+                                            <li>Réalisation de tests unitaires et fonctionnels</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Mettre à l'échelle une application Django en utilisant une architecture modulaire:
+                                        <ul>
+                                            <li>Déplacement d'un modèle vers une nouvelle app</li>
+                                            <li>Écriture des tests unitaires et fonctionnels</li>
+                                            <li>Création et publication de la documentation avec Read The Docs</li>
+                                            <li>Surveillance de l'application et suivi des erreurs via Sentry</li>
+                                            <li>Déploiement sur Heroku avec docker</li>
+                                            <li>Mise en place d'une pipeline sous circleCI</li>
+                                        </ul>
+                                    </li>
+                                </ol>                             
+                            </p>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                    
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem iusto autem, iste ex labore in aspernatur reprehenderit tenetur obcaecati, quibusdam deserunt molestiae earum? Error, saepe molestias est aliquam aspernatur ut!
-                        </p>
-                    </div>
-                </div>
                 </div>
             </div>
         </aside>
@@ -391,7 +501,7 @@
                     <a href="mailto:berniche.aurelie@orange.fr" class="text-decoration-none">Mail to Aurélie André</a>
                 </div>
                 <!-- Button trigger modal -->
-                <a href="" class="navbar-brand" data-bs-toggle="modal" data-bs-target="#MentionsLegales">Mentions légales</a>
+                <a href="" class="navbar-brand" data-bs-toggle="modal" data-bs-target="#Competences">Mes compétences</a>
                 
                 <div class="d-flex">
                     <a href="https://www.linkedin.com/in/aur%C3%A9lie-berniche-49997828b" target="_blank" class="text-decoration-none me-2" data-bs-toggle="tooltip" title="LinkedIn"><i class="bi bi-linkedin">Linkedin</i></a>
