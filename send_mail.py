@@ -10,14 +10,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-print('test envoi email')
-
-# mode debug (à supprimer si ok):
-cgitb.enable()
 
 expediteur = os.getenv('expediteur', 'default')
 password = os.getenv('password', 'default')
 destinataire = os.getenv('destinataire', 'default')
+smtp_server = 'smtp.orange.fr'
+port = 587
 
 form = cgi.FieldStorage()
 
@@ -31,42 +29,32 @@ try:
     input_message = form.getvalue('message')
     message = html.escape(input_message)
     subject = [prenom, nom, email]
-    print("<script> alert('Merci, message bien envoyé. Je vous répond dans les plus brefs délais.')</script>")
 except:
-    print("<p> Merci de renseigner tous les champs du formulaire.</p>")
     print(Exception)
+    raise Exception
 
-print("Content-type: text/html; charset=utf-8\n")
-doc_html = """
+msg_html_1 = """
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send mail</title>
-</head>
+
 <body>
-    <h1> Mail envoyé</h1>
-"""
-print(doc_html)
-print(f"<h2>Merci {prenom}</h2>")
-doc_html = """
+    <p> """
+msg_html_2 = message.as_string()
+msg_html_3 = """   
+    </p>
+        
 </body>
 </html>
 """
-print
-
-msg = MIMEMultipart()
+msg_html = msg_html_1 + msg_html_2 + msg_html_3
+msg = MIMEMultipart("alternative")
 msg['From'] = expediteur
 msg['To'] = destinataire
-msg['Subject'] = subject 
-msg.attach(MIMEText(message))
-print(msg)
-mailserver = smtplib.SMTP('smtp.orange.fr', 587)
-mailserver.ehlo()
-mailserver.starttls()
-mailserver.ehlo()
-mailserver.login(expediteur, password)
-mailserver.sendmail(expediteur, expediteur, msg.as_string())
-mailserver.quit()
-print(msg)
-print('done?')
+msg['Subject'] = subject.as_string() 
+msg.attach(MIMEText(message, "text"))
+msg.attach(MIMEText(msg_html, "html"))
+with smtplib.SMTP(smtp_server, port) as mailserver:
+    mailserver.starttls()
+    mailserver.ehlo()
+    mailserver.login(expediteur, password)
+    mailserver.sendmail(expediteur, expediteur, msg.as_string())
+

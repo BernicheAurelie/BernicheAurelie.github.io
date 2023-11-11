@@ -1,0 +1,66 @@
+// déclarer la variable utilities par défaut en 1er
+$utilities: ()!default;
+// fonction map-merge de Sass pour fusionner 
+// sans remplacer les classes existatntes de bootstrap
+// fusionne le 1er args: $utilities 
+// avec le reste du code qu'on ajoute en 2e args ("cursor": etc...)
+// class: cursor correspond au préfixe de classe
+// values soit une valeur unique soit un tableau
+// une valeur null ne sera pas compilée
+// crée une classe cursor-cell avec ces données
+$utilities: map-merge(
+ $utilities,
+ (
+  "cursor": (
+   property: cursor,
+   class: cursor,
+   responsive: true,
+   values: cell,
+  ),
+  "text-color": (
+    property: color,
+    class: color,
+    values: (
+        my_color: #581845,
+    )
+  )
+  ,
+  "opacity": (
+    property: opacity,
+    class: opacity,
+    responsive: true,
+    values: (
+        0: 0,
+        10: .10,
+        20: .20,
+        30: .30,
+        40: .40,
+        50: .5,
+        60: .60,
+        70: .70,
+        80: .80,
+        90: .90,
+        100: 1,
+    )
+  ),
+  "z-index": (
+    property: z-index,
+    class: z,
+    responsive: true,
+    values: (
+        negative: -1,
+        0: 0,
+        10: .10,
+        20: .20,
+        30: .30,
+        40: .40,
+        50: .5,
+        60: .60,
+        70: .70,
+        80: .80,
+        90: .90,
+        100: 1,
+    )
+  )
+ )
+);

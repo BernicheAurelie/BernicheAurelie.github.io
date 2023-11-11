@@ -1,3 +1,6 @@
-@import "variables_overrides.scss";   // <-- ajouter cette ligne tout en haut du fichier
+@import "_variables_overrides.scss";   // <-- ajouter cette ligne tout en haut du fichier
+
+@import "_utilities_custom.scss";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
+
