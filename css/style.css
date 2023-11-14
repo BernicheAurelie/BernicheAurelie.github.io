@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .gradient-background-image {
-  background-image: linear-gradient(120deg, rgba(31, 220, 237, 0), rgb(31, 220, 237));
+  background-image: linear-gradient(120deg, rgba(31, 220, 237, 0), rgb(31, 220, 237,1));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,6 +496,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -553,6 +554,7 @@ legend + * {
 
 [type=search] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -575,6 +577,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
