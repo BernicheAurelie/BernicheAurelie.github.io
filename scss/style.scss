@@ -1,10 +1,11 @@
 .gradient-background-image {
-    background-image: linear-gradient(120deg, rgb(31,220,237,0.6), rgb(88,24,69,0.6));
+    background-image: linear-gradient(120deg, rgb(31,220,237,0), rgb(31,220,237,1));
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
   }
+
 //   background: url("../img/fairy.jpeg");
 //   background-attachment: fixed;
 //   background-position: center;

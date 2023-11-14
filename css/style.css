@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .gradient-background-image {
-  background-image: linear-gradient(120deg, rgba(31, 220, 237, 0.6), rgba(88, 24, 69, 0.6));
+  background-image: linear-gradient(120deg, rgba(31, 220, 237, 0), rgb(31, 220, 237));
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
