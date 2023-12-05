@@ -91,11 +91,38 @@
                     <div class="col-12 col-md-7">
                         <div class="bg-white mb-3 p-3">
                             <div class="row align-items-center">
-                                <!-- on définit la 1ere colonne pour chaque taille d'écran et la 2e prend le reste-->
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-python fa-2x me-3 color-my_color"></i>
+                                        <p class="fw-bold m-0 color-my_color">Python</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="Python" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%" data-bs-toggle="tooltip" title="Python 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <div class="d-flex align-items-center color-my_color">
+                                        <i class="w-25 ps-0 pe-2 me-1">
+                                            <svg fill="#581845" width="30px" height="50px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#581845" stroke-width="0.024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"><path d="M7.533 12.249c-.011 1.985 1.445 3.168 3.768 2.63V9.618c-2.352-.716-3.758.733-3.768 2.631m3.839-10.238h3.199v15.143c-3.066.501-6.004.819-8.104-.355-2.705-1.513-2.923-6.319-.782-8.46 1.085-1.085 3.271-1.85 5.616-1.351V2.225c-.006-.101-.012-.202.071-.214m8.389 3.342h-3.199V2.011h3.199v3.342z"></path><path d="M19.761 7.044c-.003 2.356-.003 4.048-.003 6.911-.136 2.813-.104 5.052-1.135 6.398-.203.266-.634.652-.995.924-.303.228-.881.691-1.208.711-.331.021-1.18-.459-1.564-.64-.505-.237-.971-.553-1.493-.71 1.218-.754 2.372-1.32 2.844-2.844.41-1.326.355-3.247.355-5.119 0-1.849.009-3.998.009-5.63l3.19-.001z"></path></g></svg>
+                                        </i>
+                                        <p class="fw-bold m-2 color-my_color">Django</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="Django" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%" data-bs-toggle="tooltip" title="Django 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fab fa-html5 fa-2x me-3 color-my_color"></i>
-                                        <p class="fw-bold m-0">HTML5</p>
+                                        <p class="fw-bold m-0 color-my_color">HTML5</p>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -108,7 +135,7 @@
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fab fa-css3-alt fa-2x me-3 color-my_color"></i>
-                                        <p class="fw-bold m-0">CSS</p>
+                                        <p class="fw-bold m-0 color-my_color">CSS</p>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -121,30 +148,123 @@
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
                                         <i class="fab fa-js fa-2x me-3 color-my_color"></i>
-                                        <p class="fw-bold m-0">JS</p>
+                                        <p class="fw-bold m-0 color-my_color">JS</p>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="progress my-4" role="progressbar" aria-label="javascript" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%" data-bs-toggle="tooltip" title="javascript 50%"></div>
+                                    <div class="progress my-4" role="progressbar" aria-label="javascript" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%" data-bs-toggle="tooltip" title="javascript 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 offset-md-1 col-md-4">
+                        <img src="img/code_python.jpg" class="img-thumbnail w-100" alt="image de code">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <!-- <h2>Mon expertise:</h2>
+                <h3 class="fs-4">Développement d'applications Python Django</h3> -->
+                <div class="row gy-4 gy-md-0 mt-4 align-items-center" id="mon_expertise">
+                    <!-- .offset-1 à 11 pour laisser 1-11 colonnes vides à gauche
+                        là en md (cad à partir des grands écrans) 7 + 4 + 1 offset = 12 IMPORTANT
+                    -->
+                    <div class="col-12 col-md-4">
+                        <img src="img/visual_studio_code_2.jpg" class="img-thumbnail w-100" alt="image de code">
+                    </div>
+                    <div class="col-12 offset-md-1 col-md-7">
+                        <div class="bg-white mb-3 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <!-- docker -->
+                                    <div class="d-flex align-items-center">
+                                        <i class="me-3 color-my_color">
+                                            <img class="w-100" src="img/Docker-Logo.jpg" alt="docker logo">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="Docker" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%" data-bs-toggle="tooltip" title="Docker 70%"></div>
+                                    </div>
+                                </div>
+                                <!-- on définit la 1ere colonne pour chaque taille d'écran et la 2e prend le reste-->
+                                
+                                
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <!-- github -->
+                                    <div class="d-flex align-items-center">
+                                        <i class="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                        </i>
+                                        <i class="me-3 px-2 color-my_color">
+                                            <img width="60" height="10" alt="GitHub Logotype" class="height-auto" src="https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png">
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="CSS" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%" data-bs-toggle="tooltip" title="GitHub 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center">
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <!-- sentry -->
+                                    <div class="d-flex align-items-center">
+                                        <i class="me-3 color-my_color">
+                                            <svg class="css-lfbo6j e10nushx4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 66" width="80" height="25">
+                                                <path d="M29,2.26a4.67,4.67,0,0,0-8,0L14.42,13.53A32.21,32.21,0,0,1,32.17,40.19H27.55A27.68,27.68,0,0,0,12.09,17.47L6,28a15.92,15.92,0,0,1,9.23,12.17H4.62A.76.76,0,0,1,4,39.06l2.94-5a10.74,10.74,0,0,0-3.36-1.9l-2.91,5a4.54,4.54,0,0,0,1.69,6.24A4.66,4.66,0,0,0,4.62,44H19.15a19.4,19.4,0,0,0-8-17.31l2.31-4A23.87,23.87,0,0,1,23.76,44H36.07a35.88,35.88,0,0,0-16.41-31.8l4.67-8a.77.77,0,0,1,1.05-.27c.53.29,20.29,34.77,20.66,35.17a.76.76,0,0,1-.68,1.13H40.6q.09,1.91,0,3.81h4.78A4.59,4.59,0,0,0,50,39.43a4.49,4.49,0,0,0-.62-2.28Z M124.32,28.28,109.56,9.22h-3.68V34.77h3.73V15.19l15.18,19.58h3.26V9.22h-3.73ZM87.15,23.54h13.23V20.22H87.14V12.53h14.93V9.21H83.34V34.77h18.92V31.45H87.14ZM71.59,20.3h0C66.44,19.06,65,18.08,65,15.7c0-2.14,1.89-3.59,4.71-3.59a12.06,12.06,0,0,1,7.07,2.55l2-2.83a14.1,14.1,0,0,0-9-3c-5.06,0-8.59,3-8.59,7.27,0,4.6,3,6.19,8.46,7.52C74.51,24.74,76,25.78,76,28.11s-2,3.77-5.09,3.77a12.34,12.34,0,0,1-8.3-3.26l-2.25,2.69a15.94,15.94,0,0,0,10.42,3.85c5.48,0,9-2.95,9-7.51C79.75,23.79,77.47,21.72,71.59,20.3ZM195.7,9.22l-7.69,12-7.64-12h-4.46L186,24.67V34.78h3.84V24.55L200,9.22Zm-64.63,3.46h8.37v22.1h3.84V12.68h8.37V9.22H131.08ZM169.41,24.8c3.86-1.07,6-3.77,6-7.63,0-4.91-3.59-8-9.38-8H154.67V34.76h3.8V25.58h6.45l6.48,9.2h4.44l-7-9.82Zm-10.95-2.5V12.6h7.17c3.74,0,5.88,1.77,5.88,4.84s-2.29,4.86-5.84,4.86Z" transform="translate(11, 11)" fill="#362d59"></path></svg>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="CSS" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%" data-bs-toggle="tooltip" title="sentry 80%"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <!-- circle ci -->
                                     <div class="d-flex align-items-center">
-                                        <i class="fab fa-python fa-2x me-3 color-my_color"></i>
-                                        <p class="fw-bold m-0">Python</p>
+                                        <i class="me-3 color-my_color">
+                                            <svg width="80" height="25" viewBox="0 0 120 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M105.517 20.1526C109.094 20.1526 112.095 17.697 112.94 14.3775C112.945 14.3535 112.949 14.3285 112.949 14.3032C112.949 14.1013 112.786 13.9379 112.585 13.9379H109.496C109.349 13.9379 109.223 14.0248 109.166 14.1512L109.165 14.1507C108.53 15.5345 107.137 16.4965 105.517 16.4965C103.301 16.4965 101.504 14.6963 101.504 12.4752C101.504 10.2544 103.301 8.45375 105.517 8.45375C107.137 8.45375 108.53 9.41571 109.165 10.7998L109.166 10.7991C109.223 10.9245 109.349 11.0128 109.496 11.0128H112.585C112.786 11.0128 112.949 10.8491 112.949 10.6471C112.949 10.6217 112.945 10.5983 112.94 10.574C112.095 7.25447 109.094 4.79812 105.517 4.79812C101.287 4.79812 97.8548 8.23631 97.8548 12.4752C97.8548 16.7153 101.287 20.1526 105.517 20.1526ZM118.683 5.16355V19.4211C118.683 19.6227 118.519 19.7864 118.319 19.7864H115.4C115.198 19.7864 115.035 19.6227 115.035 19.4211V5.16355H118.683ZM116.859 0.0456006C115.65 0.0456006 114.67 1.02806 114.67 2.23915C114.67 3.45061 115.65 4.4327 116.859 4.4327C118.068 4.4327 119.048 3.45061 119.048 2.23915C119.048 1.02806 118.068 0.0456006 116.859 0.0456006ZM82.729 11.0128C83.3688 8.69492 85.4878 6.99167 88.0047 6.99167C90.5216 6.99167 92.6389 8.69492 93.2786 11.0128H82.729ZM88.0047 4.79812C83.7726 4.79812 80.3419 8.23507 80.3419 12.4752C80.3419 16.7148 83.7726 20.1526 88.0047 20.1526C90.9962 20.1526 93.5847 18.4339 94.8465 15.9294C94.8718 15.8796 94.886 15.8246 94.886 15.7651C94.886 15.5628 94.7226 15.3998 94.5211 15.3998H92.8278C92.7072 15.3998 92.6001 15.459 92.5343 15.5502C91.5491 17.0032 89.8885 17.9588 88.0047 17.9588C85.229 17.9588 82.9381 15.8888 82.5811 13.206H95.2915C95.4871 13.206 95.6456 13.052 95.6556 12.859C95.6623 12.7319 95.6658 12.6038 95.6658 12.4752C95.6658 8.23507 92.236 4.79812 88.0047 4.79812ZM77.7879 0.411151H76.3289C76.1266 0.411151 75.9639 0.574915 75.9639 0.776577V19.4211C75.9639 19.6227 76.1266 19.7864 76.3289 19.7864H77.7879C77.9895 19.7864 78.1534 19.6227 78.1534 19.4211V0.776577C78.1534 0.574915 77.9895 0.411151 77.7879 0.411151ZM73.4096 15.3998H71.7158C71.5977 15.3998 71.4932 15.4564 71.4275 15.5433C70.4438 17.0002 68.7799 17.9588 66.8931 17.9588C63.8694 17.9588 61.4198 15.5037 61.4198 12.4752C61.4198 9.44653 63.8694 6.99167 66.8931 6.99167C68.7799 6.99167 70.4438 7.9504 71.4275 9.40689C71.494 9.49424 71.5986 9.55065 71.7158 9.55065H73.4096C73.6114 9.55065 73.7749 9.38664 73.7749 9.1851C73.7749 9.12558 73.7598 9.07029 73.7345 9.02084C72.4735 6.51653 69.8833 4.79812 66.8931 4.79812C62.6612 4.79812 59.231 8.23507 59.231 12.4752C59.231 16.7148 62.6612 20.1526 66.8931 20.1526C69.8833 20.1526 72.4735 18.4339 73.7345 15.9294C73.7598 15.8796 73.7749 15.8246 73.7749 15.7651C73.7749 15.5628 73.6114 15.3998 73.4096 15.3998ZM58.8712 4.80695C56.6632 4.91132 54.8998 5.96821 53.7577 7.58262V5.52848C53.7577 5.32769 53.5941 5.16355 53.3927 5.16355H51.9334C51.7318 5.16355 51.5687 5.32769 51.5687 5.52848V19.4211C51.5687 19.6227 51.7318 19.7864 51.9334 19.7864H53.3927C53.5941 19.7864 53.7577 19.6227 53.7577 19.4211V12.4752C53.7577 9.56966 56.0135 7.19247 58.8652 7.00435C59.0668 7.00435 59.231 6.84033 59.231 6.63805V5.1725C59.231 4.97208 59.0701 4.8108 58.8712 4.80695ZM49.3792 19.4211V5.16355H47.1899V19.4211C47.1899 19.6227 47.3538 19.7864 47.5551 19.7864H49.0143C49.2158 19.7864 49.3792 19.6227 49.3792 19.4211ZM49.7438 2.23915C49.7438 3.04679 49.091 3.70147 48.2847 3.70147C47.4789 3.70147 46.8255 3.04679 46.8255 2.23915C46.8255 1.43151 47.4789 0.776577 48.2847 0.776577C49.091 0.776577 49.7438 1.43151 49.7438 2.23915ZM44.6359 15.3998H42.9425C42.8239 15.3998 42.7204 15.4564 42.6531 15.5433C41.6701 17.0002 40.0067 17.9588 38.119 17.9588C35.096 17.9588 32.646 15.5037 32.646 12.4752C32.646 9.44653 35.096 6.99167 38.119 6.99167C40.0067 6.99167 41.6701 7.9504 42.6539 9.40689C42.7204 9.49424 42.8249 9.55065 42.9425 9.55065H44.6359C44.8378 9.55065 45.0017 9.38664 45.0017 9.1851C45.0017 9.12558 44.9859 9.07029 44.9617 9.02084C43.6999 6.51653 41.1096 4.79812 38.119 4.79812C33.8873 4.79812 30.4563 8.23507 30.4563 12.4752C30.4563 16.7148 33.8873 20.1526 38.119 20.1526C41.1096 20.1526 43.6999 18.4339 44.9617 15.9294C44.9859 15.8796 45.0017 15.8246 45.0017 15.7651C45.0017 15.5628 44.8378 15.3998 44.6359 15.3998ZM12.0774 0C6.2655 0 1.38827 3.98986 0.015625 9.38403C0.0063244 9.42329 0 9.4633 0 9.50505C0 9.83307 0.265501 10.099 0.593006 10.099H5.61111C5.85007 10.099 6.05456 9.95608 6.14893 9.75206L6.1498 9.75231C7.1808 7.50347 9.44544 5.94013 12.0774 5.94013C15.6782 5.94013 18.5988 8.86652 18.5988 12.4752C18.5988 16.084 15.6782 19.0103 12.0774 19.0103C9.44544 19.0103 7.1808 17.447 6.1498 15.1975L6.14893 15.1988C6.05456 14.9944 5.85007 14.8517 5.61111 14.8517H0.593006C0.265501 14.8517 0 15.1169 0 15.4458C0 15.4864 0.0063244 15.5252 0.0147569 15.5641C1.38703 20.9586 6.26439 24.9501 12.0774 24.9501C18.9529 24.9501 24.5277 19.3641 24.5277 12.4752C24.5277 5.58551 18.9529 0 12.0774 0ZM9.11272 12.4752C9.11272 10.8352 10.4404 9.50505 12.0774 9.50505C13.7143 9.50505 15.0414 10.8352 15.0414 12.4752C15.0414 14.1153 13.7143 15.4458 12.0774 15.4458C10.4404 15.4458 9.11272 14.1153 9.11272 12.4752Z" fill="currentColor"></path></svg>
+                                        </i>
                                     </div>
                                 </div>
                                 <div class="col">
-                                    <div class="progress my-4" role="progressbar" aria-label="Python" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%" data-bs-toggle="tooltip" title="Python 70%"></div>
+                                    <div class="progress my-4" role="progressbar" aria-label="circleCI" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%" data-bs-toggle="tooltip" title="circleCI 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 col-sm-4 col-md-3 col-xl-2">
+                                    <!-- postgresql -->
+                                    <div class="d-flex align-items-center">
+                                        <span class="me-3 color-my_color">
+                                            PostgreSQL
+                                            <!-- <img class="w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/233px-Postgresql_elephant.svg.png" alt=""> -->
+                                        </span>
+                                        <!-- <p class="m-0">PostgreSQL</p> -->
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="progress my-4" role="progressbar" aria-label="HTML5" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%" data-bs-toggle="tooltip" title="PostgreSQL 70%"></div>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="row align-items-center">
+                            <!-- <div class="row align-items-center">
                                 <div class="col-5 col-sm-4 col-md-3 col-xl-2">
                                     <div class="d-flex align-items-center">
                                         <svg class="" fill="#581845" width="50px" height="50px" viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg" stroke="#581845" stroke-width="0.024"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"><path d="M7.533 12.249c-.011 1.985 1.445 3.168 3.768 2.63V9.618c-2.352-.716-3.758.733-3.768 2.631m3.839-10.238h3.199v15.143c-3.066.501-6.004.819-8.104-.355-2.705-1.513-2.923-6.319-.782-8.46 1.085-1.085 3.271-1.85 5.616-1.351V2.225c-.006-.101-.012-.202.071-.214m8.389 3.342h-3.199V2.011h3.199v3.342z"></path><path d="M19.761 7.044c-.003 2.356-.003 4.048-.003 6.911-.136 2.813-.104 5.052-1.135 6.398-.203.266-.634.652-.995.924-.303.228-.881.691-1.208.711-.331.021-1.18-.459-1.564-.64-.505-.237-.971-.553-1.493-.71 1.218-.754 2.372-1.32 2.844-2.844.41-1.326.355-3.247.355-5.119 0-1.849.009-3.998.009-5.63l3.19-.001z"></path></g></svg>                                        
@@ -156,13 +276,11 @@
                                         <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%" data-bs-toggle="tooltip" title="Django 80%"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
                     </div>
-                    <div class="col-12 offset-md-1 col-md-4">
-                        <img src="img/code_python.jpg" class="img-thumbnail w-100" alt="image de code">
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -416,14 +534,6 @@
                                             <li>Apprentissage des langages HTML5 et CSS3</li>
                                             <li>Apprentissage de Javascript
                                                 <ul>
-                                                    <!-- <details>
-                                                        <summary> 
-                                                            apprentissage js
-                                                        </summary>
-                                                        <p>
-                                                            création d'un carousel, Requêtes AJAX vers une API Rest
-                                                        </p>
-                                                    </details> -->
                                                     <li class="list_detail">Création d'un carousel</li>
                                                     <li class="list_detail">Requêtes AJAX vers une API Rest</li>
                                                 </ul>
