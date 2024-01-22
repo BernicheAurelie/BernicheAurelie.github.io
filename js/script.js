@@ -5,13 +5,18 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 const lang = document.documentElement.getAttribute('lang') || 'en';
 function Init() {
+    console.log("constante lang initial: ", lang);
   new google.translate.TranslateElement({ pageLanguage: `${lang}` });
+  console.log("constante lang post translate: ", lang)
 }
 
 const usrlang = navigator.language.substring(0, 2) || navigator.userLanguage.substring(0, 2);
 if (usrlang !== `${lang}`) {
+    console.log("constante usrlang/lang: ", usrlang, " / ", lang);
+    console.log("document.cookie: ", document.cookie)
   document.cookie = `googtrans=/${lang}/${usrlang}; Expires=Session; SameSite=None; Secure`;
   const google = document.createElement('script');
+  console.log("const google: ", google)
   google.type = 'text/javascript';
   google.src = 'https://translate.google.com/translate_a/element.js?cb=Init';
   document.body.append(google);
