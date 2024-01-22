@@ -7,7 +7,7 @@
   background-size: cover;
 }
 /* auto google translate with a script */
-#preloader {
+/* #preloader {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -54,7 +54,7 @@
   display: none;
   position: absolute !important;
   top: -5000px;
-}
+} */
 
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
