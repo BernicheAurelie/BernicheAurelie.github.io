@@ -4,8 +4,9 @@ const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 
 const lang = document.documentElement.getAttribute('lang') || 'en';
+console.log("constante lang initial: ", lang);
 function Init() {
-    console.log("constante lang initial: ", lang);
+    console.log("constante lang in init: ", lang);
   new google.translate.TranslateElement({ pageLanguage: `${lang}` });
   console.log("constante lang post translate: ", lang)
 }
@@ -13,8 +14,9 @@ function Init() {
 const usrlang = navigator.language.substring(0, 2) || navigator.userLanguage.substring(0, 2);
 if (usrlang !== `${lang}`) {
     console.log("constante usrlang/lang: ", usrlang, " / ", lang);
-    console.log("document.cookie: ", document.cookie)
+    console.log("document.cookie initial: ", document.cookie)
   document.cookie = `googtrans=/${lang}/${usrlang}; Expires=Session; SameSite=None; Secure`;
+  console.log("document.cookie googtrans: ", document.cookie)
   const google = document.createElement('script');
   console.log("const google: ", google)
   google.type = 'text/javascript';
