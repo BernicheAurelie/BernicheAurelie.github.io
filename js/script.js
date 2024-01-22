@@ -22,7 +22,7 @@ if (usrlang !== `${lang}`) {
   google.type = 'text/javascript';
   google.src = 'https://translate.google.com/translate_a/element.js?cb=Init';
   document.body.append(google);
-  setTimeout(removePreloader, 1200);
+//   setTimeout(removePreloader, 1200);
 } else removePreloader();
 
 function removePreloader() {
